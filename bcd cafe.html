@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCD - Bharatpur Coffee Day | Open 24x7 in Jaipur</title>
+    <link rel="stylesheet" href="style-cafe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="language-toggle">
+        <button id="langBtn" onclick="toggleLanguage()">हिंदी में देखें</button>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1><span id="header-title">BCD</span></h1>
+            <p id="header-subtitle">Bharatpur Coffee Day</p>
+            <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span id="rating-text">4.9 (87 reviews)</span>
+            </div>
+            <div class="badge open-badge" id="open-badge">Open 24x7</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&q=80" alt="BCD Cafe Interior">
+        <div class="hero-overlay">
+            <h2 id="hero-title">Your 24x7 Coffee Destination</h2>
+            <p id="hero-text">Great food, amazing vibes, open all night</p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <a href="https://wa.me/919828219759?text=Hi!%20I%20want%20to%20know%20more%20about%20BCD%20Cafe" class="btn btn-primary">
+                <span class="btn-icon">💬</span> <span id="whatsapp-btn">Order on WhatsApp</span>
+            </a>
+            <a href="tel:+919828219759" class="btn btn-secondary">
+                <span class="btn-icon">📞</span> <span id="call-btn">Call Now</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 id="about-title">Welcome to BCD</h2>
+            <p id="about-text">We serve fresh coffee, tasty food, and good vibes round the clock. Whether you're here for a quick breakfast, late night study session, or just hanging out with friends, we've got you covered.</p>
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">🍽️</span>
+                    <h3 id="feature1-title">Dine-In</h3>
+                    <p id="feature1-text">Large seating space</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🚗</span>
+                    <h3 id="feature2-title">Drive-Through</h3>
+                    <p id="feature2-text">Quick pickup</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🛵</span>
+                    <h3 id="feature3-title">Delivery</h3>
+                    <p id="feature3-text">Fast & contactless</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📦</span>
+                    <h3 id="feature4-title">Takeaway</h3>
+                    <p id="feature4-text">Order & go</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2 id="gallery-title">Our Vibe</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80" alt="Coffee and Pastries">
+                <img src="https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?cs=srgb&dl=pexels-apgpotr-683039.jpg&fm=jpg" alt="Fresh Coffee">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Cafe Seating">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80" alt="Delicious Food">
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="container">
+            <h2 id="menu-title">Our Menu</h2>
+            
+            <div class="menu-category">
+                <h3 id="menu-hot-title">☕ Hot Beverages</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-espresso">Espresso</span>
+                            <span class="price">₹80</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-cappuccino">Cappuccino</span>
+                            <span class="price">₹120</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-latte">Café Latte</span>
+                            <span class="price">₹130</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-mocha">Café Mocha</span>
+                            <span class="price">₹140</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-hotchoc">Hot Chocolate</span>
+                            <span class="price">₹150</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-masalatea">Masala Tea</span>
+                            <span class="price">₹50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-greentea">Green Tea</span>
+                            <span class="price">₹60</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 id="menu-cold-title">🧊 Cold Coffee & Shakes</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-coldcoffee">Cold Coffee</span>
+                            <span class="price">₹140</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-coldcoffeeice">Cold Coffee with Ice Cream</span>
+                            <span class="price">₹160</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-chocoshake">Chocolate Shake</span>
+                            <span class="price">₹170</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-oreoshake">Oreo Shake</span>
+                            <span class="price">₹180</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-kitkatshake">KitKat Shake</span>
+                            <span class="price">₹180</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-strawshake">Strawberry Shake</span>
+                            <span class="price">₹170</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-vanillashake">Vanilla Shake</span>
+                            <span class="price">₹160</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 id="menu-pasta-title">🍝 Pasta</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-whitepasta">White Sauce Pasta</span>
+                            <span class="price">₹180</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-redpasta">Red Sauce Pasta</span>
+                            <span class="price">₹170</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-mixpasta">Mix Sauce Pasta</span>
+                            <span class="price">₹190</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-cheesepasta">Cheese Pasta</span>
+                            <span class="price">₹200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 id="menu-sandwich-title">🥪 Sandwiches & Fast Food</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-cheesesand">Cheese Grilled Sandwich</span>
+                            <span class="price">₹120</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-vegsand">Veg Grilled Sandwich</span>
+                            <span class="price">₹100</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-clubsand">Club Sandwich</span>
+                            <span class="price">₹150</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-vegburger">Veg Burger</span>
+                            <span class="price">₹90</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-cheeseburger">Cheese Burger</span>
+                            <span class="price">₹120</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-frenchfries">French Fries</span>
+                            <span class="price">₹90</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-periperifries">Peri Peri Fries</span>
+                            <span class="price">₹120</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 id="menu-pizza-title">🍕 Pizza</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-vegpizza">Veg Pizza (Regular)</span>
+                            <span class="price">₹180</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-cheesepizza">Cheese Pizza</span>
+                            <span class="price">₹200</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-paneerpizza">Paneer Pizza</span>
+                            <span class="price">₹220</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 id="menu-dessert-title">🧁 Desserts</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-brownie">Chocolate Brownie</span>
+                            <span class="price">₹120</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-brownieice">Brownie with Ice Cream</span>
+                            <span class="price">₹150</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-icecream">Ice Cream Scoop</span>
+                            <span class="price">₹60</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 id="menu-mocktail-title">🧃 Mocktails & Coolers</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-bluelagoon">Blue Lagoon</span>
+                            <span class="price">₹150</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-mojito">Mojito</span>
+                            <span class="price">₹140</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-strawmojito">Strawberry Mojito</span>
+                            <span class="price">₹160</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span id="item-limesoda">Fresh Lime Soda</span>
+                            <span class="price">₹80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2 id="reviews-title">What People Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Mindblowing hygienic foody stuff with amazing place"</p>
+                    <p class="review-author">- Google Review</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Good food, good vibe, nice service"</p>
+                    <p class="review-author">- Google Review</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Best café, tasty food, good seating space, very kind staff"</p>
+                    <p class="review-author">- Google Review</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Fantastic meal… slow down and enjoy your coffee just looking at the vibes"</p>
+                    <p class="review-author">- Google Review</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="amenities">
+        <div class="container">
+            <h2 id="amenities-title">Facilities</h2>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <span class="amenity-icon">📶</span>
+                    <p id="amenity-wifi">Free Wi-Fi</p>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🅿️</span>
+                    <p id="amenity-parking">Wheelchair Accessible Parking</p>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🌳</span>
+                    <p id="amenity-outdoor">Outdoor Seating</p>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🌈</span>
+                    <p id="amenity-payment">LGBTQ Friendly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 id="contact-title">Visit Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <h3 id="contact-address-title">Address</h3>
+                        <p id="contact-address">Shop No. 100/SP-149, 138 Sector 10, Narayana Road, Kumbha Marg, Jaipur, Rajasthan - 302033</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <h3 id="contact-phone-title">Phone</h3>
+                        <p><a href="tel:+919828219759">098282 19759</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🕐</span>
+                    <div>
+                        <h3 id="contact-hours-title">Hours</h3>
+                        <p id="contact-hours">Open 24 Hours, 7 Days a Week</p>
+                    </div>
+                </div>
+            </div>
+            <a href="https://maps.app.goo.gl/5niU64DaEEDaUdCv6" target="_blank" class="btn btn-map">
+                <span class="btn-icon">🗺️</span> <span id="map-btn-text">Locate on Map</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="sticky-whatsapp">
+        <a href="https://wa.me/919828219759?text=Hi!%20I%20want%20to%20order%20from%20BCD%20Cafe">
+            💬 <span id="sticky-whatsapp-text">Order Now</span>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p id="footer-text">&copy; 2024 BCD - Bharatpur Coffee Day. Open 24x7 for you.</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentLang = 'en';
+
+        const translations = {
+            en: {
+                'langBtn': 'हिंदी में देखें',
+                'header-title': 'BCD',
+                'header-subtitle': 'Bharatpur Coffee Day',
+                'rating-text': '4.9 (87 reviews)',
+                'open-badge': 'Open 24x7',
+                'hero-title': 'Your 24x7 Coffee Destination',
+                'hero-text': 'Great food, amazing vibes, open all night',
+                'whatsapp-btn': 'Order on WhatsApp',
+                'call-btn': 'Call Now',
+                'about-title': 'Welcome to BCD',
+                'about-text': 'We serve fresh coffee, tasty food, and good vibes round the clock. Whether you\'re here for a quick breakfast, late night study session, or just hanging out with friends, we\'ve got you covered.',
+                'feature1-title': 'Dine-In',
+                'feature1-text': 'Large seating space',
+                'feature2-title': 'Drive-Through',
+                'feature2-text': 'Quick pickup',
+                'feature3-title': 'Delivery',
+                'feature3-text': 'Fast & contactless',
+                'feature4-title': 'Takeaway',
+                'feature4-text': 'Order & go',
+                'gallery-title': 'Our Vibe',
+                'menu-title': 'Our Menu',
+                'menu-hot-title': '☕ Hot Beverages',
+                'item-espresso': 'Espresso',
+                'item-cappuccino': 'Cappuccino',
+                'item-latte': 'Café Latte',
+                'item-mocha': 'Café Mocha',
+                'item-hotchoc': 'Hot Chocolate',
+                'item-masalatea': 'Masala Tea',
+                'item-greentea': 'Green Tea',
+                'menu-cold-title': '🧊 Cold Coffee & Shakes',
+                'item-coldcoffee': 'Cold Coffee',
+                'item-coldcoffeeice': 'Cold Coffee with Ice Cream',
+                'item-chocoshake': 'Chocolate Shake',
+                'item-oreoshake': 'Oreo Shake',
+                'item-kitkatshake': 'KitKat Shake',
+                'item-strawshake': 'Strawberry Shake',
+                'item-vanillashake': 'Vanilla Shake',
+                'menu-pasta-title': '🍝 Pasta',
+                'item-whitepasta': 'White Sauce Pasta',
+                'item-redpasta': 'Red Sauce Pasta',
+                'item-mixpasta': 'Mix Sauce Pasta',
+                'item-cheesepasta': 'Cheese Pasta',
+                'menu-sandwich-title': '🥪 Sandwiches & Fast Food',
+                'item-cheesesand': 'Cheese Grilled Sandwich',
+                'item-vegsand': 'Veg Grilled Sandwich',
+                'item-clubsand': 'Club Sandwich',
+                'item-vegburger': 'Veg Burger',
+                'item-cheeseburger': 'Cheese Burger',
+                'item-frenchfries': 'French Fries',
+                'item-periperifries': 'Peri Peri Fries',
+                'menu-pizza-title': '🍕 Pizza',
+                'item-vegpizza': 'Veg Pizza (Regular)',
+                'item-cheesepizza': 'Cheese Pizza',
+                'item-paneerpizza': 'Paneer Pizza',
+                'menu-dessert-title': '🧁 Desserts',
+                'item-brownie': 'Chocolate Brownie',
+                'item-brownieice': 'Brownie with Ice Cream',
+                'item-icecream': 'Ice Cream Scoop',
+                'menu-mocktail-title': '🧃 Mocktails & Coolers',
+                'item-bluelagoon': 'Blue Lagoon',
+                'item-mojito': 'Mojito',
+                'item-strawmojito': 'Strawberry Mojito',
+                'item-limesoda': 'Fresh Lime Soda',
+                'reviews-title': 'What People Say',
+                'amenities-title': 'Facilities',
+                'amenity-wifi': 'Free Wi-Fi',
+                'amenity-parking': 'Wheelchair Accessible Parking',
+                'amenity-outdoor': 'Outdoor Seating',
+                'amenity-payment': 'LGBTQ Friendly',
+                'contact-title': 'Visit Us',
+                'contact-address-title': 'Address',
+                'contact-address': 'Shop No. 100/SP-149, 138 Sector 10, Narayana Road, Kumbha Marg, Jaipur, Rajasthan - 302033',
+                'contact-phone-title': 'Phone',
+                'contact-hours-title': 'Hours',
+                'contact-hours': 'Open 24 Hours, 7 Days a Week',
+                'map-btn-text': 'Locate on Map',
+                'sticky-whatsapp-text': 'Order Now',
+                'footer-text': '© 2024 BCD - Bharatpur Coffee Day. Open 24x7 for you.'
+            },
+            hi: {
+                'langBtn': 'View in English',
+                'header-title': 'बीसीडी',
+                'header-subtitle': 'भरतपुर कॉफी डे',
+                'rating-text': '4.9 (87 समीक्षाएं)',
+                'open-badge': '24x7 खुला',
+                'hero-title': 'आपका 24x7 कॉफी स्थान',
+                'hero-text': 'बढ़िया खाना, अद्भुत माहौल, रात भर खुला',
+                'whatsapp-btn': 'WhatsApp पर ऑर्डर करें',
+                'call-btn': 'अभी कॉल करें',
+                'about-title': 'बीसीडी में आपका स्वागत है',
+                'about-text': 'हम चौबीसों घंटे ताज़ा कॉफी, स्वादिष्ट खाना और अच्छा माहौल परोसते हैं। चाहे आप नाश्ते के लिए आएं, देर रात पढ़ाई के लिए, या दोस्तों के साथ घूमने के लिए, हम आपके लिए हैं।',
+                'feature1-title': 'डाइन-इन',
+                'feature1-text': 'बड़ी बैठक जगह',
+                'feature2-title': 'ड्राइव-थ्रू',
+                'feature2-text': 'तेज़ पिकअप',
+                'feature3-title': 'डिलीवरी',
+                'feature3-text': 'तेज़ और सुरक्षित',
+                'feature4-title': 'टेकअवे',
+                'feature4-text': 'ऑर्डर करें और ले जाएं',
+                'gallery-title': 'हमारा माहौल',
+                'menu-title': 'हमारा मेनू',
+                'menu-hot-title': '☕ गर्म पेय',
+                'item-espresso': 'एस्प्रेसो',
+                'item-cappuccino': 'कैपुचीनो',
+                'item-latte': 'कैफे लट्टे',
+                'item-mocha': 'कैफे मोचा',
+                'item-hotchoc': 'हॉट चॉकलेट',
+                'item-masalatea': 'मसाला चाय',
+                'item-greentea': 'ग्रीन टी',
+                'menu-cold-title': '🧊 कोल्ड कॉफी और शेक',
+                'item-coldcoffee': 'कोल्ड कॉफी',
+                'item-coldcoffeeice': 'आइसक्रीम के साथ कोल्ड कॉफी',
+                'item-chocoshake': 'चॉकलेट शेक',
+                'item-oreoshake': 'ओरियो शेक',
+                'item-kitkatshake': 'किटकैट शेक',
+                'item-strawshake': 'स्ट्रॉबेरी शेक',
+                'item-vanillashake': 'वेनिला शेक',
+                'menu-pasta-title': '🍝 पास्ता',
+                'item-whitepasta': 'व्हाइट सॉस पास्ता',
+                'item-redpasta': 'रेड सॉस पास्ता',
+                'item-mixpasta': 'मिक्स सॉस पास्ता',
+                'item-cheesepasta': 'चीज़ पास्ता',
+                'menu-sandwich-title': '🥪 सैंडविच और फास्ट फूड',
+                'item-cheesesand': 'चीज़ ग्रिल्ड सैंडविच',
+                'item-vegsand': 'वेज ग्रिल्ड सैंडविच',
+                'item-clubsand': 'क्लब सैंडविच',
+                'item-vegburger': 'वेज बर्गर',
+                'item-cheeseburger': 'चीज़ बर्गर',
+                'item-frenchfries': 'फ्रेंच फ्राइज़',
+                'item-periperifries': 'पेरी पेरी फ्राइज़',
+                'menu-pizza-title': '🍕 पिज़्ज़ा',
+                'item-vegpizza': 'वेज पिज़्ज़ा (रेगुलर)',
+                'item-cheesepizza': 'चीज़ पिज़्ज़ा',
+                'item-paneerpizza': 'पनीर पिज़्ज़ा',
+                'menu-dessert-title': '🧁 मिठाइयाँ',
+                'item-brownie': 'चॉकलेट ब्राउनी',
+                'item-brownieice': 'आइसक्रीम के साथ ब्राउनी',
+                'item-icecream': 'आइसक्रीम स्कूप',
+                'menu-mocktail-title': '🧃 मॉकटेल और कूलर',
+                'item-bluelagoon': 'ब्लू लैगून',
+                'item-mojito': 'मोजिटो',
+                'item-strawmojito': 'स्ट्रॉबेरी मोजिटो',
+                'item-limesoda': 'फ्रेश लाइम सोडा',
+                'reviews-title': 'लोग क्या कहते हैं',
+                'amenities-title': 'सुविधाएं',
+                'amenity-wifi': 'फ्री वाई-फाई',
+                'amenity-parking': 'व्हीलचेयर सुलभ पार्किंग',
+                'amenity-outdoor': 'बाहरी बैठक',
+                'amenity-payment': 'LGBTQ अनुकूल',
+                'contact-title': 'हमसे मिलें',
+                'contact-address-title': 'पता',
+                'contact-address': 'शॉप नं. 100/SP-149, 138 सेक्टर 10, नारायणा रोड, कुंभा मार्ग, जयपुर, राजस्थान - 302033',
+                'contact-phone-title': 'फ़ोन',
+                'contact-hours-title': 'समय',
+                'contact-hours': '24 घंटे, सप्ताह के 7 दिन खुला',
+                'map-btn-text': 'मानचित्र पर खोजें',
+                'sticky-whatsapp-text': 'अभी ऑर्डर करें',
+                'footer-text': '© 2024 बीसीडी - भरतपुर कॉफी डे। आपके लिए 24x7 खुला।'
+            }
+        };
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'hi' : 'en';
+            
+            for (let key in translations[currentLang]) {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = translations[currentLang][key];
+                }
+            }
+        }
+    </script>
+</body>
+</html>
